@@ -1,0 +1,18 @@
+{
+  "scripts": {
+    "dev": "vuepress dev src",
+    "build": "vuepress build src",
+    "lint": "./node_modules/.bin/eslint './src/.vuepress/**/*.{js,vue}'",
+    "lint:fix": "./node_modules/.bin/eslint './src/.vuepress/**/*.{js,vue}' --fix"
+  },
+  "dependencies": {
+    "@kawarimidoll/vuepress-plugin-tailwind": "^2.0.0",
+    "vue-js-modal": "^2.0.0-rc.6",
+    "vuepress": "^1.8.2",
+    "vuex": "^3.6.2"
+  },
+  "devDependencies": {
+    "eslint": "^7.25.0",
+    "eslint-plugin-vue": "^7.9.0"
+  }
+}

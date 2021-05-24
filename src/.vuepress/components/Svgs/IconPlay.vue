@@ -1,0 +1,15 @@
+<template>
+  <!-- TODO: Compress -->
+  <svg 
+    width="19"
+    height="23"
+    viewBox="0 0 19 23"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M19 11.5L0.249999 22.3253L0.249999 0.674683L19 11.5Z"
+      fill="black"
+    />
+  </svg>
+</template>
