@@ -1,5 +1,6 @@
 
 module.exports = {
+  base: '/<REPO>/',
   dest: './docs',
   head: [
     [
