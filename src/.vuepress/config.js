@@ -1,6 +1,6 @@
 
 module.exports = {
-  base: '',
+  base: '/netaual.com/',
   dest: './docs',
   head: [
     [
