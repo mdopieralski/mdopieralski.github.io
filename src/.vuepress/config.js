@@ -1,6 +1,6 @@
 
 module.exports = {
-  dest: './dist',
+  dest: './docs',
   head: [
     [
       'meta',
