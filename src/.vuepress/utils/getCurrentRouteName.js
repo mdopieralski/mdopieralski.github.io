@@ -9,7 +9,7 @@ export default function getCurrentRouteName() {
         ? false
         : window.location.href.includes('github');
     const currentHref = isGithub 
-        ? window.location.pathname.replace('/neatual.com', '')
+        ? window.location.pathname.replace('/neatual.com/', '')
         : window.location.pathname;
         
 
