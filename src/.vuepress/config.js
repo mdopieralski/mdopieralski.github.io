@@ -34,7 +34,7 @@ module.exports = {
   locales: {
     '/': {
       lang: 'pl-PL',
-      title: 'Netual.com | Szwalnia z pasją.',
+      title: 'Neatual.com | Szwalnia z pasją.',
       description: 'Naszym priorytetem jest dbałość o szczegóły i jakość wykonania a schludny efekt końcowy jest naszą motywacją. Starannie dobieramy materiały, korzystając tylko z produktów polskiego pochodzenia...',
       navItems: [
         {
@@ -80,7 +80,7 @@ module.exports = {
     },
     '/en/': {
       lang: 'en-US',
-      title: 'Netual.com | TODO: English',
+      title: 'Neatual.com | TODO: English',
       description: 'TODO: Description',
       navItems: [
         {
@@ -126,7 +126,7 @@ module.exports = {
     },
     '/de/': {
       lang: 'de-DE',
-      title: 'Netual.com | TODO: German',
+      title: 'Neatual.com | TODO: German',
       description: 'TODO: Description',
       navItems: [
         {
