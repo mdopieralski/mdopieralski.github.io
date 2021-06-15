@@ -2,6 +2,7 @@
   "scripts": {
     "dev": "vuepress dev src",
     "build": "vuepress build src",
+    "deploy": "yarn build && git add . && git commit -m 'deploy' && git push",
     "lint": "./node_modules/.bin/eslint './src/.vuepress/**/*.{js,vue}'",
     "lint:fix": "./node_modules/.bin/eslint './src/.vuepress/**/*.{js,vue}' --fix"
   },

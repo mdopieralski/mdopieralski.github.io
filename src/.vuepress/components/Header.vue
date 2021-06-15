@@ -98,6 +98,13 @@
             const currentRouteName = getCurrentRouteName();
             const currentLang = getCurrentLanguage();
 
+            console.log({
+              currentRouteName,
+              currentLang,
+              ROUTES,
+              ROUTE_NAMES,
+            })
+
             return {
                 currentRouteName,
                 currentLang,
