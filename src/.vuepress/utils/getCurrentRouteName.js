@@ -5,7 +5,13 @@ export default function getCurrentRouteName() {
         return 'HOME'
     }
 
-    const currentHref = window.location.pathname;
+    const isGithub = typeof window === 'undefined'
+        ? false
+        : window.location.href.includes('github');
+    const currentHref = isGithub 
+        ? window.location.pathname.replace('/neatual.com', '')
+        : window.location.pathname;
+        
 
     return Object.keys(ROUTES)
         .reduce((acc, routeKey) => {
