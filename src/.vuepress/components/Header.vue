@@ -23,8 +23,7 @@
           <VpIcon
             v-show="showSvgLogo" 
             class="
-              [ mr-auto ]
-              [ tablet:h-auto tablet:w-36 ]
+              [ ] h-20 mr-auto tablet:h-56 tablet:w-36 tablet:w-38 vp-icon vp-icon-logo w-20
               "
             name="logo"
           />
