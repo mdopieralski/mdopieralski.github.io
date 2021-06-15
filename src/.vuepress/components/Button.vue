@@ -1,7 +1,7 @@
 <template>
   <Component 
     :is="isAnchor ? 'a' : 'button'"
-    :href="href"
+    :href="$parseHref(href)"
     :type="isAnchor ? null : 'button'"
     class="block border-2 w-full uppercase mb-4 text-16 text-center py-3 rounded-full"
   >

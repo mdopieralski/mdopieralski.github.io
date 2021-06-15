@@ -17,7 +17,7 @@
           :key="index"
         >
           <a 
-            :href="item.link"
+            :href="$parseHref(item.link)"
             class="text-center uppercase text-14 px-2 pb-2 hover:text-black"
             :class="{
               'text-black border-b-2': $data.currentUrl === item.link, 

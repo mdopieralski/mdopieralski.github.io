@@ -12,7 +12,8 @@
     "
     >
       <div class="desktop:w-1/3">
-        <a :href="homeRoute">
+            
+        <a :href="$parseHref(homeRoute)">
           <span 
             v-show="showTextLogo" 
             class="font-logo text-18 mr-auto"
@@ -70,7 +71,7 @@
               :key="item.href"
             >
               <a 
-                :href="item.href"
+                :href="$parseHref(item.href)"
                 :class="{
                   'font-black': item.label === currentLang,
                 }"

@@ -2,6 +2,7 @@ import Vuex from 'vuex'
 import 'vue-js-modal/dist/styles.css'
 import store from './store';
 import { appScreens } from './constants/screens';
+import parseHref from './utils/parseHref';
 
 let VModal;
 
@@ -36,6 +37,7 @@ export default ({
       });
     }
     
+    Vue.prototype.$parseHref = parseHref;
     Vue.use(VModal);
     Vue.use(Vuex);
     Vue.mixin({
