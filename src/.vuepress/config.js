@@ -1,5 +1,5 @@
 module.exports = {
-  base: '/neatual.com/',
+  base: '/netaual.com/',
   dest: './docs',
   head: [
     [
