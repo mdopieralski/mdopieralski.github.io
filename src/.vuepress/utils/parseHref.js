@@ -1,5 +1,7 @@
 export default function parseHref(href) {
-    const isGithub = window.location.href.includes('github');
+    const isGithub = typeof window === 'undefined'
+        ? false
+        : window.location.href.includes('github');
 
     if (!isGithub) {
         return href;
