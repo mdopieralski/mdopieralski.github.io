@@ -21,5 +21,5 @@ export default function getCurrentRouteName() {
             }
 
             return acc;
-        }, '');
+        }, HOME);
 }
