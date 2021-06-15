@@ -12,5 +12,15 @@ export default function parseHref(href) {
     const repoName = urlChunks[REPO_NAME_INDEX];
     const pathname = `/${repoName}/${urlChunks.slice(REPO_NAME_INDEX + 1, urlChunks.length).join('/')}`;
 
+    console.log('parseHref', {
+        href,
+        pathname,
+        REPO_NAME_INDEX,
+        urlChunks,
+        repoName,
+        pathname,
+
+    });
+
     return pathname;
 }

@@ -99,12 +99,24 @@
             const currentLang = getCurrentLanguage();
 
             console.log({
-              currentRouteName,
-              currentLang,
-              ROUTES,
-              ROUTE_NAMES,
-            })
-
+                currentRouteName,
+                currentLang,
+                homeRoute: ROUTES[ROUTE_NAMES.HOME][currentLang], 
+                languages: [
+                    {
+                        label: LANG_CODES.PL,
+                        href: ROUTES[currentRouteName].PL,
+                    },
+                    {
+                        label: LANG_CODES.EN,
+                        href: ROUTES[currentRouteName].EN,
+                    },
+                    {
+                        label: LANG_CODES.DE,
+                        href: ROUTES[currentRouteName].DE,
+                    }
+                ]
+            });
             return {
                 currentRouteName,
                 currentLang,
