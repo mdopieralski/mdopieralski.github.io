@@ -9,7 +9,10 @@
   >
     <DisplayMedia :displays="['desktop']">
       <div>
-        <IconLogo style="width:236px; height: 292px;" />
+        <VpIcon 
+          style="width:236px; height: 292px;"
+          name="logo" 
+        />
       </div>
     </DisplayMedia>
     <div
@@ -24,7 +27,10 @@
           class="flex pb-8 mb-8 border-b"
           :href="`tel:${$localeConfig.contact.phone}`"
         >
-          <IconPlay class="mr-8" />
+          <VpIcon
+            class="mr-8"
+            name="play" 
+          />
           <span class="text-14">
             {{ $localeConfig.contact.phone }}
           </span>
@@ -33,7 +39,10 @@
           class="flex pb-8 mb-8 border-b"
           :href="`mailto:${$localeConfig.contact.email}`"
         >
-          <IconStop class="mr-8" />
+          <VpIcon 
+            class="mr-8"
+            name="stop" 
+          />
           <span class="text-14">
             {{ $localeConfig.contact.email }}
           </span>
@@ -45,21 +54,10 @@
         "
         >
           <div class="flex">
-            <svg
+            <VpIcon 
               class="mr-8"
-              width="19"
-              height="19"
-              viewBox="0 0 19 19"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <rect
-                width="19"
-                height="19"
-                rx="9.5"
-                fill="black"
-              />
-            </svg>
+              name="dott" 
+            />
             <span class="text-14 font-bold">
               NEATUAL 
             </span>
@@ -98,22 +96,16 @@
         </Button>
       </div>
     </DisplayMedia>
-  </article>
+    </article>
 </template>
 <script>
     import Button from '../Button.vue';
     import DisplayMedia from '../DisplayMedia';
-    import IconLogo from '../Svgs/IconLogo';
-    import IconPlay from '../Svgs/IconPlay';
-    import IconStop from '../Svgs/IconStop';
 
     export default {
         components: {
             Button,
             DisplayMedia,
-            IconLogo,
-            IconPlay,
-            IconStop,
         }
     }
 </script> 

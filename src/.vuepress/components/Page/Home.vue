@@ -6,14 +6,15 @@
       [ desktop:flex-row desktop:mt-0 desktop:justify-center desktop:pt-80 desktop:h-auto ]
       "
   >
-    <figure
+  <figure
       class="
         [ mb-12 ] 
         [ tablet:mb-24 ] 
         [ desktop:flex desktop:mb-0 desktop:w-1/3 desktop:pr-40 ]
       "
     >
-      <IconLogo 
+      <VpIcon
+        name="logo" 
         class="
           [ w-32 h-auto ]
           [ tablet:mx-auto tablet:w-56 ]
@@ -64,7 +65,10 @@
               class="flex"
               :href="`tel:${$localeConfig.contact.phone}`"
             >
-              <IconPlay class="mr-8" />
+              <VpIcon
+                name="play" 
+                class="mr-8" 
+              />
               <span class="text-14">
                 {{ $localeConfig.contact.phone }}
               </span>
@@ -75,7 +79,10 @@
               class="flex"
               :href="`mailto:${$localeConfig.contact.email}`"
             >
-              <IconStop class="mr-8" />
+              <VpIcon
+                name="stop" 
+                class="mr-8" 
+              />
               <span class="text-14">
                 {{ $localeConfig.contact.email }}
               </span>
@@ -84,23 +91,15 @@
         </ul>
       </div>
     </DisplayMedia>
+
   </article>
 </template>
 <script>
     import MODAL_NAMES from '../../constants/modals';
     import ModalWithDetails from '../Modals/ModalWithDetails';
-    import DisplayMedia from '../DisplayMedia';
-    import IconLogo from '../Svgs/IconLogo';
-    import IconPlay from '../Svgs/IconPlay';
-    import IconStop from '../Svgs/IconStop';
 
     export default {
         components: { 
-            DisplayMedia, 
-            IconLogo, 
-            IconPlay, 
-            IconStop, 
-            ModalWithDetails, 
         },
         methods: {
             showModal() {

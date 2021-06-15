@@ -22,7 +22,7 @@ export default {
                 console.error('Wrong device type');
                 return;
             }
-
+            
             state.deviceType = deviceType;
         }
     },

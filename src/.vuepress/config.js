@@ -1,6 +1,5 @@
-
 module.exports = {
-  base: '/netaual.com/',
+  base: '/neatual.com/',
   dest: './docs',
   head: [
     [
@@ -173,6 +172,7 @@ module.exports = {
     }
   },
   plugins: [
+    '@goy/svg-icons',
     [
       "@kawarimidoll/tailwind", 
       { 

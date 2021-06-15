@@ -15,9 +15,9 @@
                 deviceType: state => state.ui.deviceType,
             }),
         },
-        render() {
+        render(createElement) {
             if (!this.displays.includes(this.deviceType)) {
-                return;
+                return createElement('div');
             }
 
             return this.$slots.default;

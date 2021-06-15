@@ -14,23 +14,24 @@
       <div class="desktop:w-1/3">
         <a :href="homeRoute">
           <span 
-            v-if="showTextLogo" 
+            v-show="showTextLogo" 
             class="font-logo text-18 mr-auto"
           >
             netual.com
           </span>
-          <IconLogo 
-            v-if="showSvgLogo" 
+          <VpIcon
+            v-show="showSvgLogo" 
             class="
               [ mr-auto ]
               [ tablet:h-auto tablet:w-36 ]
               "
+            name="logo"
           />
         </a>
       </div>
       <div class="desktop:w-2/3 desktop:flex desktop:px-36">
         <ul 
-          v-if="showContact"
+          v-show="showContact"
           class="flex w-2/3"
         >
           <li class="w-1/2">
@@ -38,7 +39,10 @@
               class="flex"
               :href="`tel:${$localeConfig.contact.phone}`"
             >
-              <IconPlay class="mr-8" />
+              <VpIcon 
+                name="play" 
+                class="mr-8" 
+              />
               <span class="text-14">
                 {{ $localeConfig.contact.phone }}
               </span>
@@ -49,7 +53,10 @@
               class="flex"
               :href="`mailto:${$localeConfig.contact.email}`"
             >
-              <IconStop class="mr-8" />
+              <VpIcon 
+                name="stop" 
+                class="mr-8" 
+              />
               <span class="text-14">
                 {{ $localeConfig.contact.email }}
               </span>
@@ -85,16 +92,7 @@
     import { ROUTE_NAMES, ROUTES } from '../constants/routes';
     import { getCurrentRouteName, getCurrentLanguage } from '../utils';
 
-    import IconLogo from './Svgs/IconLogo';
-    import IconPlay from './Svgs/IconPlay';
-    import IconStop from './Svgs/IconStop';
-
     export default {
-        components: {
-            IconLogo,
-            IconPlay,
-            IconStop,
-        },
         data() {
             const currentRouteName = getCurrentRouteName();
             const currentLang = getCurrentLanguage();

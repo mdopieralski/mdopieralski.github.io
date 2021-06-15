@@ -3,8 +3,8 @@ const { tailwindScreens } = require('./src/.vuepress/constants/screens');
 module.exports = {
     purge: {
         content: [
-            `/.src/**/*.@(js|ts|md|vue|html)`,
-            `/.src/**/*.@(js|ts|md|vue|html)`,
+            `src/.vuepress/**/*.@(js|ts|md|vue|html)`,
+            `src/.vuepress/**/*.@(js|ts|md|vue|html)`,
         ],
     },
     theme: {
