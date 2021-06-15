@@ -10,7 +10,7 @@ export default function parseHref(href) {
     const REPO_NAME_INDEX = 3;
     const urlChunks = window.location.href.split('/');
     const repoName = urlChunks[REPO_NAME_INDEX];
-    const pathname = `/${repoName}/${href}`;
+    const pathname = `/${repoName}${href}`;
 
     console.log('parseHref', {
         href,
