@@ -28,7 +28,7 @@
           :href="`tel:${$localeConfig.contact.phone}`"
         >
           <VpIcon
-            class="mr-8"
+            class="mr-8 w-8 h-8"
             name="play" 
           />
           <span class="text-14">
@@ -40,7 +40,7 @@
           :href="`mailto:${$localeConfig.contact.email}`"
         >
           <VpIcon 
-            class="mr-8"
+            class="mr-8 w-8 h-8"
             name="stop" 
           />
           <span class="text-14">
@@ -55,7 +55,7 @@
         >
           <div class="flex">
             <VpIcon 
-              class="mr-8"
+              class="mr-8 w-8 h-8"
               name="dott" 
             />
             <span class="text-14 font-bold">

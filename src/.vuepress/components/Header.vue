@@ -42,7 +42,7 @@
             >
               <VpIcon 
                 name="play" 
-                class="mr-8" 
+                class="mr-8 w-8 h-8" 
               />
               <span class="text-14">
                 {{ $localeConfig.contact.phone }}
@@ -56,7 +56,7 @@
             >
               <VpIcon 
                 name="stop" 
-                class="mr-8" 
+                class="mr-8 w-8 h-8" 
               />
               <span class="text-14">
                 {{ $localeConfig.contact.email }}
