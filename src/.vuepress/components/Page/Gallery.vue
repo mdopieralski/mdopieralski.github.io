@@ -31,10 +31,11 @@
     </div>
     <div class="w-2/3 flex px-36">
       <div class="w-1/2">
-        <figure class="h-0 pb-full overflow-hidden rounded-2xl mb-8">
+        <figure class="h-0 pb-full overflow-hidden rounded-2xl mb-8 relative">
           <img
             :alt="currentProduct.name"
             :src="currentProduct.photos[currentPhotoIndex] && currentProduct.photos[currentPhotoIndex].url || currentProduct.thumbnailUrl"
+            class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
           >
         </figure>
       </div>
@@ -87,20 +88,20 @@
         name: `Wzór nr ${index}`,
         price: 'XX PLN',
         description: '50% bawełna / 50% len<br>Uszyto w Polsce.',
-        thumbnailUrl: `/gallery/produkt-${index}/produkt-${index}.jpg`,
+        thumbnailUrl: `/gallery/produkt-${index}/produkt-${index}-1.jpg`,
         photos: [
             {
-                url: `/gallery/produkt-${index}-/produkt-${index}-1.jpg`,
+                url: `/gallery/produkt-${index}/produkt-${index}-1.jpg`,
             }, 
             {
-                url: `/gallery/produkt-${index}-/produkt-${index}-2.jpg`,
+                url: `/gallery/produkt-${index}/produkt-${index}-2.jpg`,
             }, 
             {
-                url: `/gallery/produkt-${index}-/produkt-${index}-3.jpg`,
+                url: `/gallery/produkt-${index}/produkt-${index}-3.jpg`,
             },
             {
-                url: `/gallery/produkt-${index}-/produkt-${index}-4.jpg`,
-            }, 
+                url: `/gallery/produkt-${index}/produkt-${index}-4.jpg`,
+            },
         ]
     });
 
@@ -117,6 +118,15 @@
                     createProduct(2),
                     createProduct(3),
                     createProduct(4),
+                    createProduct(1),
+                    createProduct(2),
+                    createProduct(3),
+                    createProduct(4),
+                    createProduct(1),
+                    createProduct(2),
+                    createProduct(3),
+                    createProduct(4),
+                    createProduct(1),
                 ],
             };
         },
