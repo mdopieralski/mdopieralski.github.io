@@ -88,19 +88,19 @@
         name: `Wzór nr ${index}`,
         price: 'XX PLN',
         description: '50% bawełna / 50% len<br>Uszyto w Polsce.',
-        thumbnailUrl: `/gallery/produkt-${index}/produkt-${index}-1.jpg`,
+        thumbnailUrl: `/gallery/${index}/produkt-${index}-1.jpg`,
         photos: [
             {
-                url: `/gallery/produkt-${index}/produkt-${index}-1.jpg`,
+                url: `/gallery/${index}/produkt-${index}-1.jpg`,
             }, 
             {
-                url: `/gallery/produkt-${index}/produkt-${index}-2.jpg`,
+                url: `/gallery/${index}/produkt-${index}-2.jpg`,
             }, 
             {
-                url: `/gallery/produkt-${index}/produkt-${index}-3.jpg`,
+                url: `/gallery/${index}/produkt-${index}-3.jpg`,
             },
             {
-                url: `/gallery/produkt-${index}/produkt-${index}-4.jpg`,
+                url: `/gallery/${index}/produkt-${index}-4.jpg`,
             },
         ]
     });
@@ -118,15 +118,15 @@
                     createProduct(2),
                     createProduct(3),
                     createProduct(4),
-                    createProduct(1),
-                    createProduct(2),
-                    createProduct(3),
-                    createProduct(4),
-                    createProduct(1),
-                    createProduct(2),
-                    createProduct(3),
-                    createProduct(4),
-                    createProduct(1),
+                    createProduct(5),
+                    createProduct(6),
+                    createProduct(7),
+                    createProduct(8),
+                    createProduct(9),
+                    createProduct(10),
+                    createProduct(11),
+                    createProduct(12),
+                    createProduct(13),
                 ],
             };
         },
